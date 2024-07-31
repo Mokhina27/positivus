@@ -1,0 +1,181 @@
+.banner {
+    margin-top: 125px;
+
+    &__first {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 45px;
+        background: #F3F3F3;
+        padding: 0 60px;
+        height: 347px;
+
+        @media (max-width: 500px) {
+            text-align: center;
+            height: auto;
+            padding: 15px;
+        }
+
+        &_left {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+        }
+
+        &_title {
+            color: #000;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        &_text {
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        &_btn {
+            border-radius: 14px;
+            background: #191A23;
+            color: #FFF;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px; 
+            padding: 20px 35px;
+
+            @media (max-width: 500px) {
+                font-size: 18px;
+                padding: 15px 20px;
+            }
+        }
+
+        &_right {
+            @media (max-width: 825px) {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-top: 140px;
+        gap: 40px;
+        align-items: center;
+
+        @media (max-width: 940px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &_title {
+            border-radius: 7px;
+            background: #B9FF66;
+            color: #000;
+            font-size: 40px;
+            font-weight: 500;
+            padding: 0 7px;
+        }
+
+        &_text {
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+            width: 580px;
+
+            @media (max-width: 665px) {
+                width: 320px;
+            }
+            @media (max-width: 400px) {
+                width: 250px;
+            }
+        }
+    }
+
+    &__second {
+        display: flex;
+        margin-top: 80px;
+        border-radius: 45px;
+        background: #191A23;
+        padding: 70px 60px;
+        gap: 64px;
+        justify-content: center;
+
+        @media (max-width: 1250px) {
+            gap: 35px;
+            padding: 50px 40px;
+        }
+
+        @media (max-width: 1220px) {
+            display: grid;
+            grid-template-columns: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            background: none;
+            margin-top: 30px;
+        }
+
+        &_texts {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+
+            @media (max-width: 1220px) {
+                background: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+                border-radius: 20px;
+                gap: 10px;
+                height: 260px;
+
+            }
+
+            @media (max-width: 400px) {
+                padding: 15px;
+                text-align: center;
+                height: auto;
+            }
+        }
+
+        &_text {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 400;
+            width: 286px;
+            padding-right: 20px;
+
+            @media (max-width: 400px) {
+                font-size: 15px;
+                padding-right: 0;
+                width: 200px;
+            }
+        }
+
+        &_link {
+            color:#B9FF66;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            align-items: center;
+            display: flex;
+        }
+    }
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 1px;
+    background-color: #F3F3F3;
+}

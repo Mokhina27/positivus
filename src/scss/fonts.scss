@@ -1,0 +1,11 @@
+$Space: ('Regular', 400),
+        ('Medium', 500),
+        ('SemiBold', 600);
+
+@each $name, $weight in $Space {
+    @font-face {
+        font-family: 'Space';
+        src: url('../assets/fonts/SpaceGrotesk-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
